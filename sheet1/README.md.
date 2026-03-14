@@ -1,0 +1,72 @@
+Assiut Sheet Solutions – Sheet1 Notes
+📝 General Tips for Basic Data Types (Python)
+1️⃣ Reading Input
+
+Integer (int / long long):
+
+a = int(input())
+b = int(input())
+
+Float / Double:
+
+d = float(input())
+e = float(input())
+
+Character / String:
+
+c = input()  # automatically str
+
+All values in one line:
+
+a, b, c, d, e = input().split()
+# convert types when needed:
+a = int(a)
+b = int(b)
+d = float(d)
+e = float(e)
+2️⃣ Type Conversion
+
+input() always returns string.
+
+Use int() for integers, float() for decimals.
+
+No need to convert char to str, input() already does it.
+
+3️⃣ Output Formatting
+
+Use f-strings for precise decimal places:
+
+print(f"{d:.6f}")   # float
+print(f"{e:.9f}")   # double
+
+Always print only what is asked—no extra text.
+
+4️⃣ Line of Input
+
+Check if input is on one line or multiple lines:
+
+One line → split()
+
+Multiple lines → read input() separately for each value
+
+This is a common source of mistakes in Assiut sheets.
+
+5️⃣ Python vs C++ Types
+C++ Type	Python Type
+int	int
+long long	int
+char	str
+float	float
+double	float
+
+Python int handles very large integers automatically.
+
+Python float is 64-bit, behaves like C++ double.
+
+6️⃣ Key Takeaways
+
+Focus on input type, number of lines, and formatting output.
+
+Understanding these rules is more important than memorizing code.
+
+These notes can be used as a quick reference for future problems.
